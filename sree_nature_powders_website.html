@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sree Nature Powders | Pure, Homemade Herbal Wellness</title>
+  
+  <!-- Inter & Playfair Display fonts for modern, warm aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#FDFBF7',          // Warm organic linen cream
+              card: '#FFFFFF',
+              surface: '#F5EFEB',     // Warm herbal clay cream
+              surfaceDark: '#EDE3D8',
+              forest: '#183B28',      // Rich royal forest green
+              forestLight: '#265439', // Vibrant emerald herbal
+              forestMuted: '#437655',
+              leafPill: '#E8F5EC',    // Fresh vibrant botanical tint
+              gold: '#D97706',        // Golden organic turmeric/honey
+              goldLight: '#FEF3C7',
+              goldHover: '#B45309',
+              charcoal: '#1C241E',    // Deep organic slate
+              charcoalSoft: '#3F4941',
+              accentTerracotta: '#C25E3E'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif']
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -10px rgba(24, 59, 40, 0.08)',
+            'card-hover': '0 20px 45px -12px rgba(24, 59, 40, 0.16)',
+            'button': '0 12px 28px -5px rgba(38, 84, 57, 0.38)',
+            'gold-glow': '0 10px 25px -4px rgba(217, 119, 6, 0.3)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FDFBF7;
+      color: #1C241E;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    
+    .glass-nav {
+      background: rgba(253, 251, 247, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .hero-mesh {
+      background: radial-gradient(circle at 10% 20%, rgba(217, 119, 6, 0.08) 0%, transparent 40%),
+                  radial-gradient(circle at 85% 15%, rgba(38, 84, 57, 0.12) 0%, transparent 45%),
+                  radial-gradient(circle at 50% 80%, rgba(232, 245, 236, 0.8) 0%, transparent 60%);
+    }
+
+    /* 3D Perspective Card Styles */
+    .card-3d-wrap {
+      perspective: 1200px;
+    }
+    .card-3d {
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease;
+      transform-style: preserve-3d;
+    }
+    .card-3d:hover {
+      box-shadow: 0 30px 60px -15px rgba(24, 59, 40, 0.22);
+    }
+    .pouch-3d-layer {
+      transform: translateZ(35px);
+      transition: transform 0.25s ease;
+    }
+    .shine-overlay {
+      background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 60%);
+      pointer-events: none;
+    }
+
+    /* Notification toast slide */
+    .toast-enter {
+      animation: toastSlide 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes toastSlide {
+      from { transform: translateY(100%) scale(0.95); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-brand-forestLight selection:text-white">
+
+  <header class="glass-nav sticky top-0 z-40 border-b border-brand-surfaceDark/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Complete Official Sree Nature Powders Circular Emblem -->
+      <a href="#" class="flex items-center gap-3.5 group focus:outline-none focus:ring-2 focus:ring-brand-forest rounded-2xl p-1">
+        <div class="w-13 h-13 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-brand-gold shadow-md bg-[#FAF7EE] flex items-center justify-center transition-all duration-300 group-hover:rotate-6 group-hover:scale-105 shrink-0 p-0.5">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background circle with linen tint -->
+            <circle cx="100" cy="100" r="96" fill="#FAF7EE" stroke="#183B28" stroke-width="4"/>
+            <circle cx="100" cy="100" r="91" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <circle cx="100" cy="100" r="86" fill="none" stroke="#265439" stroke-width="1"/>
+
+            <!-- Ayurvedic Mortar & Pestle & Leaves -->
+            <g transform="translate(100, 52)">
+              <path d="M-22,-6 C-32,-20 -18,-32 -4,-24 C-10,-14 -16,-6 -22,-6 Z" fill="#2E7D32"/>
+              <path d="M22,-6 C32,-20 18,-32 4,-24 C10,-14 16,-6 22,-6 Z" fill="#388E3C"/>
+              <path d="M-8,-16 C-12,-32 0,-36 4,-24 C0,-18 -4,-16 -8,-16 Z" fill="#4CAF50"/>
+              <!-- Pestle -->
+              <rect x="6" y="-30" width="8" height="28" rx="4" transform="rotate(32 10 -16)" fill="#B45309" stroke="#78350F" stroke-width="1"/>
+              <!-- Mortar Bowl -->
+              <path d="M-28,-2 C-28,16 28,16 28,-2 C20,6 -20,6 -28,-2 Z" fill="#183B28" stroke="#0F2419" stroke-width="1.5"/>
+              <ellipse cx="0" cy="-3" rx="24" ry="7" fill="#689F38"/>
+              <ellipse cx="-2" cy="-4" rx="14" ry="4" fill="#8BC34A"/>
+            </g>
+
+            <!-- Brand Typography -->
+            <text x="100" y="96" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="900" fill="#183B28" text-anchor="middle" letter-spacing="1.5">SREE NATURE</text>
+            
+            <line x1="38" y1="108" x2="68" y2="108" stroke="#D97706" stroke-width="1.5"/>
+            <text x="100" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#B45309" text-anchor="middle" letter-spacing="3">POWDERS</text>
+            <line x1="132" y1="108" x2="162" y2="108" stroke="#D97706" stroke-width="1.5"/>
+
+            <text x="100" y="126" font-family="'Playfair Display', Georgia, serif" font-size="8.5" font-style="italic" font-weight="600" fill="#183B28" text-anchor="middle">Natural Care for Every Family</text>
+            
+            <text x="100" y="141" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="800" fill="#2E7D32" text-anchor="middle" letter-spacing="0.5">100% NATURAL • CHEMICAL FREE</text>
+
+            <path d="M52,154 Q100,168 148,154" fill="none" stroke="#D97706" stroke-width="1.5"/>
+            <text x="100" y="166" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="900" fill="#183B28" text-anchor="middle" letter-spacing="1">7702410245</text>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-bold tracking-tight text-brand-forest leading-none">
+            Sree <span class="text-brand-gold font-serif italic">Nature Powders</span>
+          </span>
+          <span class="text-[10px] tracking-widest uppercase font-bold text-brand-forestMuted mt-1">
+            Pure & Natural Herbal Care • Visakhapatnam
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-brand-charcoalSoft">
+        <a href="#about" class="hover:text-brand-forestLight transition-colors">Our Ethos</a>
+        <a href="#collections" class="hover:text-brand-forestLight transition-colors">Collections</a>
+        <a href="#process" class="hover:text-brand-forestLight transition-colors">How We Make It</a>
+        <a href="#contact" class="hover:text-brand-forestLight transition-colors">Contact</a>
+      </nav>
+
+      <!-- Primary Action & WhatsApp Button -->
+      <div class="flex items-center gap-3">
+        <button 
+          onclick="openBookingModal('General Herbal Assortment')" 
+          class="hidden sm:inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-gradient-to-r from-brand-forest to-brand-forestLight hover:from-brand-forestLight hover:to-brand-forest text-white font-semibold text-sm transition-all duration-300 shadow-button hover:shadow-xl active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-forestLight focus:ring-offset-2">
+          <span>Book Now</span>
+          <i class="fa-solid fa-arrow-right text-xs text-brand-goldLight"></i>
+        </button>
+
+        <a 
+          href="https://wa.me/917702410245?text=Hello%20Sree%20Nature%20Powders,%20I%20want%20to%20order%20herbal%20powders." 
+          target="_blank"
+          class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs transition shadow-sm">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span class="hidden md:inline">7702410245</span>
+        </a>
+
+        <button 
+          id="mobileMenuBtn" 
+          aria-label="Toggle menu"
+          class="md:hidden p-2.5 rounded-2xl text-brand-forest hover:bg-brand-surface focus:outline-none focus:ring-2 focus:ring-brand-forest">
+          <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden px-6 pt-3 pb-6 bg-brand-bg/98 border-b border-brand-surfaceDark space-y-3">
+      <a href="#about" class="mobile-link block py-2 text-base font-medium text-brand-charcoal hover:text-brand-forestLight">Our Ethos</a>
+      <a href="#collections" class="mobile-link block py-2 text-base font-medium text-brand-charcoal hover:text-brand-forestLight">Collections</a>
+      <a href="#process" class="mobile-link block py-2 text-base font-medium text-brand-charcoal hover:text-brand-forestLight">How We Make It</a>
+      <a href="#contact" class="mobile-link block py-2 text-base font-medium text-brand-charcoal hover:text-brand-forestLight">Contact</a>
+      <div class="pt-2">
+        <button 
+          onclick="openBookingModal('General Herbal Assortment')" 
+          class="w-full py-3.5 rounded-full bg-gradient-to-r from-brand-forest to-brand-forestLight text-white font-semibold text-center shadow-button">
+          Book Now
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section id="about" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32 hero-mesh">
+      <div class="absolute top-1/4 -left-20 w-80 h-80 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      <div class="absolute top-10 right-10 w-96 h-96 bg-amber-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text Content -->
+          <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-brand-leafPill border border-emerald-300/60 text-brand-forest text-xs uppercase tracking-wider font-bold shadow-xs">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
+              <span>100% Sun-Dried & Hand-Ground Goodness</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-brand-forest font-bold tracking-tight leading-[1.15]">
+              Nourish Your Body with <span class="italic font-normal text-brand-gold underline decoration-brand-gold/40 decoration-wavy">Sacred Earth</span> Powders.
+            </h1>
+
+            <p class="text-base sm:text-lg text-brand-charcoalSoft max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Crafted in small batches in Visakhapatnam with zero chemicals, fillers, or artificial preservatives. Pure botanical powders for glowing skin, lush hair, and balanced daily vitality.
+            </p>
+
+            <!-- Primary CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <button 
+                onclick="openBookingModal('All Natural Powders')" 
+                class="w-full sm:w-auto px-9 py-4 rounded-full bg-gradient-to-r from-brand-forest to-brand-forestLight hover:from-brand-forestLight hover:to-brand-forest text-white font-bold text-base transition-all duration-300 shadow-button hover:shadow-2xl hover:-translate-y-0.5 active:scale-95 flex items-center justify-center gap-3">
+                <i class="fa-solid fa-basket-shopping text-sm text-brand-goldLight"></i>
+                <span>Book Now</span>
+              </button>
+
+              <a 
+                href="#collections" 
+                class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-card hover:bg-brand-surface border border-brand-forest/20 text-brand-forest font-semibold text-base transition-all duration-200 text-center shadow-soft hover:shadow">
+                Explore Powders
+              </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="pt-6 border-t border-brand-surfaceDark flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-brand-charcoalSoft font-semibold">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                  <i class="fa-solid fa-mortar-pestle text-xs"></i>
+                </span>
+                <span>Traditional Farm Sourced</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center">
+                  <i class="fa-solid fa-seedling text-xs"></i>
+                </span>
+                <span>Zero Microplastics or Additives</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                  <i class="fa-solid fa-sun text-xs"></i>
+                </span>
+                <span>Natural Shade Cured</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Board -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="absolute -inset-2 bg-gradient-to-tr from-brand-gold/30 via-emerald-300/30 to-brand-forest/30 rounded-3xl -rotate-2 transform blur-sm"></div>
+              
+              <div class="relative rounded-3xl overflow-hidden bg-brand-card border border-brand-surfaceDark p-6 sm:p-8 shadow-card-hover space-y-6">
+                <div class="flex items-center justify-between pb-4 border-b border-brand-surfaceDark">
+                  <div>
+                    <h3 class="font-serif text-lg font-bold text-brand-forest">Weekly Batch Reserve</h3>
+                    <p class="text-xs text-brand-charcoalSoft">Ground fresh in Visakhapatnam</p>
+                  </div>
+                  <span class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full border border-amber-300 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+                    Fresh Stock
+                  </span>
+                </div>
+
+                <!-- Showcase Highlights -->
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="p-4 rounded-2xl bg-brand-surface/60 border border-brand-surfaceDark hover:border-emerald-300 transition-colors text-center group">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg mb-2">🌿</div>
+                    <p class="text-xs font-bold text-brand-forest">100% Herbal</p>
+                    <p class="text-[11px] text-brand-charcoalSoft">Whole raw leaves</p>
+                  </div>
+                  <div class="p-4 rounded-2xl bg-brand-surface/60 border border-brand-surfaceDark hover:border-amber-300 transition-colors text-center group">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg mb-2">🍯</div>
+                    <p class="text-xs font-bold text-brand-forest">Homemade</p>
+                    <p class="text-[11px] text-brand-charcoalSoft">Family recipe craft</p>
+                  </div>
+                  <div class="p-4 rounded-2xl bg-brand-surface/60 border border-brand-surfaceDark hover:border-emerald-300 transition-colors text-center group">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg mb-2">✨</div>
+                    <p class="text-xs font-bold text-brand-forest">Triple Sifted</p>
+                    <p class="text-[11px] text-brand-charcoalSoft">Micro-fine texture</p>
+                  </div>
+                  <div class="p-4 rounded-2xl bg-brand-surface/60 border border-brand-surfaceDark hover:border-amber-300 transition-colors text-center group">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg mb-2">🌱</div>
+                    <p class="text-xs font-bold text-brand-forest">Ayurvedic</p>
+                    <p class="text-[11px] text-brand-charcoalSoft">Ancient balance</p>
+                  </div>
+                </div>
+
+                <!-- Live Customer Review Pill -->
+                <div class="bg-gradient-to-r from-emerald-50 to-brand-surface p-4 rounded-2xl border border-emerald-200/80 flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-brand-forest text-brand-goldLight flex items-center justify-center font-bold text-sm shrink-0 shadow-sm">
+                    SP
+                  </div>
+                  <div>
+                    <div class="flex text-amber-500 text-xs mb-0.5">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-brand-charcoal font-medium leading-snug">
+                      "The 14 Herbs Shampoo & Beetroot powder are unbeatable. 100% pure without grit."
+                    </p>
+                  </div>
+                </div>
+
+                <button 
+                  onclick="openBookingModal('All Natural Powders')" 
+                  class="w-full py-3.5 text-center text-sm font-bold rounded-2xl bg-brand-forest hover:bg-brand-forestLight text-white transition-all duration-300 flex items-center justify-center gap-2 shadow-button">
+                  <i class="fa-solid fa-basket-shopping text-xs"></i>
+                  <span>Order Fresh Batch Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="py-20 bg-brand-surface/50 border-y border-brand-surfaceDark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-cube"></i> Authentic 3D Product Showcase
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl text-brand-forest font-bold">
+            Authentic Sree Nature Herbal Range
+          </h2>
+          <p class="text-sm sm:text-base text-brand-charcoalSoft">
+            Crafted strictly in small batches from unadulterated roots, petals, and fruits. Hover over cards for 3D depth and reserve instantly.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Product 1: Shampoo Cum Hair Pack (14 Herbs) -->
+          <div class="card-3d-wrap group">
+            <div class="card-3d bg-brand-card rounded-3xl p-6 border-2 border-emerald-600/40 shadow-card-hover flex flex-col justify-between h-full relative overflow-hidden transition-all duration-300">
+              
+              <div class="flex items-center justify-between z-10">
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 flex items-center gap-1.5 shadow-xs">
+                  <span class="w-2 h-2 rounded-full bg-emerald-600 animate-ping"></span> 100% Natural Herbal
+                </span>
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-300">
+                  Net Wt: 200g
+                </span>
+              </div>
+
+              <!-- Dual Pouch Artwork Container -->
+              <div class="my-5 relative flex justify-center items-center">
+                <div class="pouch-3d-layer w-full h-[340px] rounded-2xl overflow-hidden shadow-2xl relative border-2 border-emerald-700/40 group-hover:scale-[1.02] transition-transform duration-300 bg-[#162B1E] flex items-center justify-center p-2">
+                  
+                  <svg viewBox="0 0 600 400" class="w-full h-full object-cover rounded-xl" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="bgSun" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#4D6B35" />
+                        <stop offset="40%" stop-color="#738F3B" />
+                        <stop offset="80%" stop-color="#2D431F" />
+                        <stop offset="100%" stop-color="#1A2813" />
+                      </linearGradient>
+
+                      <linearGradient id="pouchGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#55A817" />
+                        <stop offset="18%" stop-color="#72CE21" />
+                        <stop offset="50%" stop-color="#84DF2B" />
+                        <stop offset="82%" stop-color="#6DC81C" />
+                        <stop offset="100%" stop-color="#4E9914" />
+                      </linearGradient>
+
+                      <linearGradient id="woodCut" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#6F4522" />
+                        <stop offset="50%" stop-color="#4A2C11" />
+                        <stop offset="100%" stop-color="#321D0A" />
+                      </linearGradient>
+
+                      <radialGradient id="sunGlow" cx="50%" cy="20%" r="60%">
+                        <stop offset="0%" stop-color="#FFF8D6" stop-opacity="0.8" />
+                        <stop offset="60%" stop-color="#738F3B" stop-opacity="0" />
+                      </radialGradient>
+                    </defs>
+
+                    <!-- Natural Garden Blurred Background -->
+                    <rect width="600" height="400" fill="url(#bgSun)" />
+                    <circle cx="200" cy="80" r="140" fill="url(#sunGlow)" />
+                    <circle cx="480" cy="120" r="100" fill="url(#sunGlow)" opacity="0.5" />
+
+                    <!-- Wooden Pedestal Table Slab -->
+                    <ellipse cx="300" cy="365" rx="275" ry="50" fill="url(#woodCut)" stroke="#8A5A30" stroke-width="4" />
+                    <ellipse cx="300" cy="360" rx="268" ry="43" fill="#5A3618" opacity="0.7"/>
+
+                    <!-- BACK POUCH (Right Side - 14 Herbs Panel) -->
+                    <g transform="translate(325, 45)">
+                      <path d="M10,22 L175,22 C185,22 188,32 186,180 C184,275 180,285 168,288 L18,288 C6,285 2,275 0,180 C-2,32 1,22 10,22 Z" fill="url(#pouchGreen)" stroke="#3E7D0F" stroke-width="2" />
+                      <rect x="0" y="24" width="186" height="10" fill="#4B9611" />
+                      <line x1="12" y1="29" x2="174" y2="29" stroke="#9BF545" stroke-width="1.5" stroke-dasharray="3 2" />
+
+                      <rect x="18" y="42" width="150" height="236" rx="10" fill="#FFFDF7" stroke="#1D4A1B" stroke-width="1.5" />
+                      
+                      <rect x="18" y="42" width="150" height="32" rx="8" fill="#183B28" />
+                      <text x="93" y="55" font-family="'Playfair Display', serif" font-size="8" font-weight="900" fill="#FAF7EE" text-anchor="middle">SREE NATURE</text>
+                      <text x="93" y="63" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-weight="800" fill="#E8B923" text-anchor="middle">FOOD PRODUCTS</text>
+                      <text x="93" y="70" font-family="'Playfair Display', serif" font-size="7" font-weight="900" fill="#FFFFFF" text-anchor="middle">SHAMPOO CUM HAIR PACK</text>
+
+                      <!-- 14 Herbs Table Header -->
+                      <rect x="22" y="78" width="68" height="9" fill="#1F472B" rx="2" />
+                      <text x="56" y="84.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="4.8" font-weight="700" fill="#FFF" text-anchor="middle">KEY INGREDIENTS (14 HERBS)</text>
+
+                      <!-- Key Benefits Header -->
+                      <rect x="94" y="78" width="70" height="9" fill="#1F472B" rx="2" />
+                      <text x="129" y="84.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="4.8" font-weight="700" fill="#FFF" text-anchor="middle">BENEFITS</text>
+
+                      <!-- 14 Herbs list -->
+                      <text x="25" y="96" font-family="sans-serif" font-size="4.2" fill="#222">1. Amla (Usiri)</text>
+                      <text x="25" y="103" font-family="sans-serif" font-size="4.2" fill="#222">2. Shikakai</text>
+                      <text x="25" y="110" font-family="sans-serif" font-size="4.2" fill="#222">3. Reetha (Soapnut)</text>
+                      <text x="25" y="117" font-family="sans-serif" font-size="4.2" fill="#222">4. Bhringraj</text>
+                      <text x="25" y="124" font-family="sans-serif" font-size="4.2" fill="#222">5. Hibiscus Flower</text>
+                      <text x="25" y="131" font-family="sans-serif" font-size="4.2" fill="#222">6. Methi Seeds</text>
+                      <text x="25" y="138" font-family="sans-serif" font-size="4.2" fill="#222">7. Curry Leaves</text>
+                      <text x="25" y="145" font-family="sans-serif" font-size="4.2" fill="#222">8. Neem Leaves</text>
+                      <text x="25" y="152" font-family="sans-serif" font-size="4.2" fill="#222">9. Aloe Vera</text>
+                      <text x="25" y="159" font-family="sans-serif" font-size="4.2" fill="#222">10. Brahmi Powder</text>
+                      <text x="25" y="166" font-family="sans-serif" font-size="4.2" fill="#222">11. Jatamansi</text>
+                      <text x="25" y="173" font-family="sans-serif" font-size="4.2" fill="#222">12. Tulsi Leaves</text>
+                      <text x="25" y="180" font-family="sans-serif" font-size="4.2" fill="#222">13. Vetiver (Vala)</text>
+                      <text x="25" y="187" font-family="sans-serif" font-size="4.2" fill="#222">14. Green Gram</text>
+
+                      <!-- Benefits list -->
+                      <text x="96" y="96" font-family="sans-serif" font-size="4.2" fill="#183B28">✓ Deeply cleanses hair</text>
+                      <text x="96" y="104" font-family="sans-serif" font-size="4.2" fill="#183B28">✓ Nourishes scalp</text>
+                      <text x="96" y="112" font-family="sans-serif" font-size="4.2" fill="#183B28">✓ Helps reduce hair fall</text>
+                      <text x="96" y="120" font-family="sans-serif" font-size="4.2" fill="#183B28">✓ Strengthens hair roots</text>
+                      <text x="96" y="128" font-family="sans-serif" font-size="4.2" fill="#183B28">✓ 100% Chemical Free</text>
+                      <text x="96" y="136" font-family="sans-serif" font-size="4.2" fill="#183B28">✓ Net Quantity: 200 g</text>
+
+                      <!-- How to Use Box -->
+                      <rect x="22" y="193" width="142" height="26" fill="#F4EFE6" rx="3" />
+                      <text x="26" y="201" font-family="sans-serif" font-size="4.5" font-weight="700" fill="#183B28">HOW TO USE:</text>
+                      <text x="26" y="207" font-family="sans-serif" font-size="4" fill="#444">1. Mix required quantity with water into paste.</text>
+                      <text x="26" y="213" font-family="sans-serif" font-size="4" fill="#444">2. Apply to scalp & hair, leave for 10-15 mins.</text>
+
+                      <!-- Green Footer Bar -->
+                      <rect x="18" y="250" width="150" height="28" rx="4" fill="#12301F" />
+                      <text x="93" y="262" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-weight="800" fill="#A7F3D0" text-anchor="middle">100% NATURAL • HERBAL HAIR CARE</text>
+                      <text x="93" y="271" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="800" fill="#FBBF24" text-anchor="middle">Customer Care: 7702410245</text>
+                    </g>
+
+                    <!-- FRONT POUCH (Left Side - Big Golden & Herbal Front) -->
+                    <g transform="translate(90, 36)">
+                      <path d="M12,18 L218,18 C228,18 232,28 230,205 C227,305 220,314 206,318 L24,318 C10,314 3,305 0,205 C-2,28 2,18 12,18 Z" fill="url(#pouchGreen)" stroke="#356E0B" stroke-width="2.5" />
+                      <rect x="0" y="21" width="230" height="11" fill="#4E9914" />
+                      <line x1="16" y1="26" x2="214" y2="26" stroke="#ADF859" stroke-width="1.8" stroke-dasharray="4 2" />
+
+                      <path d="M22,42 L208,42 C216,42 218,52 216,280 C214,295 208,298 200,298 L30,298 C22,298 16,295 14,280 C12,52 14,42 22,42 Z" fill="#FFFDF5" stroke="#D4AF37" stroke-width="2" />
+                      
+                      <rect x="19" y="47" width="192" height="246" rx="8" fill="none" stroke="#23522C" stroke-width="1.2" />
+
+                      <!-- Emblem -->
+                      <circle cx="115" cy="85" r="26" fill="#FFF" stroke="#B45309" stroke-width="1.5" />
+                      <ellipse cx="115" cy="94" rx="14" ry="5" fill="#2E7D32" />
+                      <path d="M103,93 C103,103 127,103 127,93 Z" fill="#183B28" />
+                      <path d="M113,80 L123,73" stroke="#B45309" stroke-width="3" stroke-linecap="round" />
+                      <path d="M107,85 C101,75 110,68 115,73 C120,68 129,75 123,85 Z" fill="#4CAF50" />
+                      <text x="115" y="103" font-family="'Playfair Display', serif" font-size="5.5" font-weight="900" fill="#183B28" text-anchor="middle">SREE NATURE</text>
+                      <text x="115" y="108" font-family="'Plus Jakarta Sans', sans-serif" font-size="4" font-weight="700" fill="#B45309" text-anchor="middle">FOOD PRODUCTS</text>
+
+                      <!-- 100% NATURAL Ribbon -->
+                      <g transform="translate(30, 85)">
+                        <circle cx="12" cy="12" r="14" fill="#D97706" stroke="#FFF" stroke-width="1.5" />
+                        <text x="12" y="11" font-family="sans-serif" font-size="4.5" font-weight="900" fill="#FFF" text-anchor="middle">100%</text>
+                        <text x="12" y="16" font-family="sans-serif" font-size="3.5" font-weight="700" fill="#FFF" text-anchor="middle">NATURAL</text>
+                      </g>
+
+                      <!-- Title Headline -->
+                      <text x="115" y="132" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="900" fill="#122A1C" text-anchor="middle" letter-spacing="0.5">SHAMPOO</text>
+                      <text x="115" y="143" font-family="'Playfair Display', Georgia, serif" font-size="10" font-style="italic" font-weight="700" fill="#B45309" text-anchor="middle">CUM</text>
+                      <text x="115" y="162" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="900" fill="#122A1C" text-anchor="middle" letter-spacing="1">HAIR PACK</text>
+
+                      <rect x="36" y="168" width="158" height="12" rx="6" fill="#183B28" />
+                      <text x="115" y="176.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="800" fill="#A7F3D0" text-anchor="middle" letter-spacing="1">🌿 100% NATURAL HERBAL HAIR CARE 🌿</text>
+
+                      <!-- 4 Feature Circles -->
+                      <g transform="translate(25, 186)">
+                        <circle cx="18" cy="10" r="10" fill="#F4EFE6" stroke="#265439" stroke-width="0.8" />
+                        <text x="18" y="12" font-size="8" text-anchor="middle">✨</text>
+                        <text x="18" y="26" font-size="4.2" font-weight="700" fill="#183B28" text-anchor="middle">Cleans Gently</text>
+
+                        <circle cx="62" cy="10" r="10" fill="#F4EFE6" stroke="#265439" stroke-width="0.8" />
+                        <text x="62" y="12" font-size="8" text-anchor="middle">💧</text>
+                        <text x="62" y="26" font-size="4.2" font-weight="700" fill="#183B28" text-anchor="middle">Nourishes Scalp</text>
+
+                        <circle cx="106" cy="10" r="10" fill="#F4EFE6" stroke="#265439" stroke-width="0.8" />
+                        <text x="106" y="12" font-size="8" text-anchor="middle">🛡️</text>
+                        <text x="106" y="26" font-size="4.2" font-weight="700" fill="#183B28" text-anchor="middle">Reduces Hair Fall</text>
+
+                        <circle cx="150" cy="10" r="10" fill="#F4EFE6" stroke="#265439" stroke-width="0.8" />
+                        <text x="150" y="12" font-size="8" text-anchor="middle">🌟</text>
+                        <text x="150" y="26" font-size="4.2" font-weight="700" fill="#183B28" text-anchor="middle">Soft &amp; Shiny</text>
+                      </g>
+
+                      <!-- Botanical Leaves & Herbal Bowl -->
+                      <g transform="translate(115, 238)">
+                        <path d="M-26,-2 C-26,18 26,18 26,-2 Z" fill="#6A4018" stroke="#3D2005" stroke-width="1.5" />
+                        <ellipse cx="0" cy="-2" rx="26" ry="7" fill="#4B771A" />
+                        <ellipse cx="0" cy="-4" rx="20" ry="5" fill="#75A627" />
+                        <circle cx="-38" cy="4" r="11" fill="#E11D48" />
+                        <circle cx="-38" cy="4" r="5" fill="#BE123C" />
+                        <circle cx="-38" cy="4" r="2" fill="#FDE047" />
+                        <circle cx="-16" cy="12" r="8" fill="#84CC16" stroke="#4D7C0F" stroke-width="1" />
+                        <circle cx="-6" cy="15" r="7.5" fill="#A3E635" stroke="#4D7C0F" stroke-width="1" />
+                        <circle cx="6" cy="14" r="7.5" fill="#84CC16" stroke="#4D7C0F" stroke-width="1" />
+                        <circle cx="36" cy="6" r="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+                        <circle cx="36" cy="6" r="2.5" fill="#FACC15" />
+                      </g>
+
+                      <text x="115" y="270" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="900" fill="#183B28" text-anchor="middle">⟶ with 14 Powerful Herbs ⟵</text>
+                      
+                      <rect x="85" y="277" width="60" height="15" rx="4" fill="#183B28" stroke="#D97706" stroke-width="1.2" />
+                      <text x="115" y="284" font-family="sans-serif" font-size="4.5" font-weight="700" fill="#A7F3D0" text-anchor="middle">NET WT.</text>
+                      <text x="115" y="290" font-family="sans-serif" font-size="6" font-weight="900" fill="#FBBF24" text-anchor="middle">200g</text>
+                    </g>
+
+                    <!-- Foreground Ingredients on Wood Slab -->
+                    <g transform="translate(40, 340)">
+                      <path d="M22,12 C10,-10 35,-20 40,0 C55,-15 70,5 50,20 C70,30 45,50 35,30 C15,45 5,25 22,12 Z" fill="#DC2626" />
+                      <circle cx="36" cy="16" r="6" fill="#F59E0B" />
+                      <circle cx="10" cy="22" r="14" fill="#84CC16" stroke="#3F6212" stroke-width="1.5" />
+                      <circle cx="28" cy="26" r="12" fill="#A3E635" stroke="#3F6212" stroke-width="1.5" />
+                      <circle cx="-8" cy="28" r="10" fill="#65A30D" stroke="#365314" stroke-width="1.5" />
+                      <path d="M10,12 Q12,22 10,32" stroke="#65A30D" stroke-width="1" fill="none" />
+                      <path d="M28,18 Q30,26 28,34" stroke="#65A30D" stroke-width="1" fill="none" />
+                    </g>
+
+                    <g transform="translate(500, 345)">
+                      <ellipse cx="20" cy="15" rx="15" ry="8" fill="#451A03" />
+                      <ellipse cx="40" cy="12" rx="12" ry="7" fill="#78350F" />
+                      <circle cx="0" cy="18" r="7" fill="#84CC16" stroke="#3F6212" stroke-width="1" />
+                      <circle cx="14" cy="22" r="6" fill="#A3E635" stroke="#3F6212" stroke-width="1" />
+                    </g>
+                  </svg>
+
+                  <!-- Direct Real Photo Uploader Trigger -->
+                  <label for="customPhotoInput" class="absolute top-3 right-3 z-30 cursor-pointer bg-black/60 hover:bg-black/90 text-white text-[11px] font-bold px-3 py-1.5 rounded-full backdrop-blur-md border border-white/40 flex items-center gap-1.5 transition-all shadow-xl" title="Load your local photo file">
+                    <i class="fa-solid fa-camera text-xs text-amber-300"></i>
+                    <span>Select Photo</span>
+                  </label>
+                  <input 
+                    type="file" 
+                    id="customPhotoInput" 
+                    accept="image/*" 
+                    class="hidden" 
+                    onchange="loadLocalImage(event)">
+
+                  <div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[11px] text-white font-bold backdrop-blur-md bg-black/60 px-3 py-1.5 rounded-xl border border-white/20 pointer-events-none z-10">
+                    <span class="text-emerald-300 flex items-center gap-1">
+                      <i class="fa-solid fa-leaf text-xs"></i> 14 Powerful Herbs
+                    </span>
+                    <span class="text-amber-300">Net Wt: 200g</span>
+                  </div>
+
+                  <div class="absolute inset-0 shine-overlay pointer-events-none rounded-2xl"></div>
+                </div>
+              </div>
+
+              <!-- Product Details -->
+              <div class="space-y-3 z-10">
+                <div class="flex items-start justify-between">
+                  <div>
+                    <h3 class="font-serif text-xl font-bold text-brand-forest">Shampoo Cum Hair Pack</h3>
+                    <p class="text-xs text-emerald-700 font-semibold">14 Powerful Herbs • 100% Herbal</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-xs text-gray-400 line-through">₹240.00</span>
+                    <p class="text-xl font-black text-brand-forest">₹199.00</p>
+                  </div>
+                </div>
+
+                <div class="text-xs text-brand-charcoalSoft leading-relaxed">
+                  Carefully selected blend of 14 natural herbs: Amla, Shikakai, Reetha, Bhringraj, Hibiscus, Methi, Curry Leaves, Neem, Aloe Vera, Brahmi, Jatamansi, Tulsi, Vetiver & Green Gram.
+                </div>
+
+                <div class="flex flex-wrap gap-1.5 text-[10px] font-semibold text-emerald-900">
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Scalp Nourishment</span>
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Reduces Hair Fall</span>
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Chemical Free</span>
+                </div>
+              </div>
+
+              <!-- Action Bar -->
+              <div class="pt-5 mt-4 border-t border-brand-surfaceDark flex items-center gap-2">
+                <button 
+                  onclick="openBookingModal('Shampoo Cum Hair Pack - 200g', '₹199.00')" 
+                  class="flex-1 py-2.5 rounded-full bg-brand-forest hover:bg-brand-forestLight text-white text-xs font-bold tracking-wide transition-all shadow-button active:scale-95 flex items-center justify-center gap-1.5">
+                  <i class="fa-solid fa-basket-shopping text-xs"></i>
+                  <span>Book Now</span>
+                </button>
+                <a 
+                  href="https://wa.me/917702410245?text=Hi,%20I%20want%20to%20order%20Shampoo%20Cum%20Hair%20Pack%20(200g)%20at%20Rs.199" 
+                  target="_blank"
+                  class="p-2.5 rounded-full bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs transition" title="Order via WhatsApp">
+                  <i class="fa-brands fa-whatsapp text-base"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: Charcoal Face Pack -->
+          <div class="card-3d-wrap group">
+            <div class="card-3d bg-brand-card rounded-3xl p-6 border-2 border-pink-400/50 shadow-card-hover flex flex-col justify-between h-full relative overflow-hidden transition-all duration-300">
+              
+              <div class="flex items-center justify-between z-10">
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-pink-100 text-pink-900 border border-pink-300 flex items-center gap-1.5 shadow-xs">
+                  <i class="fa-solid fa-wand-magic-sparkles text-pink-600"></i> Detox &amp; Glow
+                </span>
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-300">
+                  Save ₹21 (15% OFF)
+                </span>
+              </div>
+
+              <!-- Stand-up Pouch Visual: Charcoal Face Pack -->
+              <div class="my-5 relative flex justify-center items-center py-1">
+                <div class="pouch-3d-layer w-full max-w-[280px] h-[340px] rounded-2xl overflow-hidden shadow-2xl relative border-2 border-pink-300/80 group-hover:scale-105 transition-transform duration-300 bg-gradient-to-b from-[#FBCFE8] via-[#F472B6] to-[#DB2777] p-2 flex flex-col justify-between">
+                  
+                  <div class="w-full h-3 border-b border-pink-200/50 flex items-center justify-between px-2">
+                    <div class="w-2 h-1 bg-black/40 rounded-full"></div>
+                    <div class="h-[2px] w-3/4 border-t border-dashed border-white/60"></div>
+                    <div class="w-2 h-1 bg-black/40 rounded-full"></div>
+                  </div>
+
+                  <div class="bg-[#FAF7EE] rounded-xl p-3 shadow-md border-2 border-pink-400/40 flex flex-col items-center text-center my-auto space-y-1">
+                    <div class="w-9 h-9 rounded-full border-2 border-emerald-800/40 bg-white flex items-center justify-center shadow-xs">
+                      <span class="text-base">🌱</span>
+                    </div>
+                    <div class="text-[8px] tracking-widest font-black text-[#183B28] uppercase">SREE NATURE POWDERS</div>
+                    <div class="text-[6.5px] italic text-amber-800 font-semibold -mt-1">Natural Care for Every Family</div>
+
+                    <div class="w-3/4 border-t border-pink-300/50 my-1"></div>
+
+                    <div class="font-serif font-black text-sm text-[#183B28] leading-tight tracking-wide">
+                      CHARCOAL FACE PACK
+                    </div>
+                    <div class="text-[6px] tracking-wider uppercase font-extrabold text-pink-700 bg-pink-100 px-2 py-0.5 rounded-full">
+                      DETOX • PURIFY • GLOW
+                    </div>
+
+                    <div class="w-16 h-8 bg-gradient-to-t from-gray-950 to-gray-800 rounded-t-full shadow-inner mx-auto my-1 border-b-2 border-amber-800/40"></div>
+
+                    <div class="text-[7.5px] font-bold text-gray-800">Net Weight: 100g</div>
+                    <div class="px-2 py-0.5 bg-[#183B28] text-amber-300 rounded font-black text-[7.5px]">
+                      7702410245
+                    </div>
+                  </div>
+
+                  <div class="bg-black/70 backdrop-blur-xs text-white rounded-xl p-2 flex items-center justify-between text-[8px] font-bold border border-white/20">
+                    <span class="text-pink-200">Deep Skin Cleansing</span>
+                    <span class="text-amber-300">100g</span>
+                  </div>
+
+                  <div class="absolute inset-0 shine-overlay pointer-events-none rounded-2xl"></div>
+                </div>
+              </div>
+
+              <!-- Product Details -->
+              <div class="space-y-3 z-10">
+                <div class="flex items-start justify-between">
+                  <div>
+                    <h3 class="font-serif text-xl font-bold text-brand-forest">Charcoal Face Pack</h3>
+                    <p class="text-xs text-pink-700 font-semibold">Skin Clearing & Oil Control</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-xs text-gray-400 line-through">₹140.00</span>
+                    <p class="text-xl font-black text-brand-forest">₹119.00</p>
+                  </div>
+                </div>
+
+                <div class="text-xs text-brand-charcoalSoft leading-relaxed">
+                  Activated Charcoal, Multani Mitti, Kaolin Clay, Dead Sea Mud & Aloe Vera. Gently cleanses oil, dirt, pollution, and refreshes dull skin.
+                </div>
+
+                <div class="p-2 rounded-xl bg-pink-50 border border-pink-200 text-[11px] text-pink-900">
+                  <span class="font-bold">How to use:</span> 2-3 tsp powder + rose water/aloe vera gel mix chesi 10-15 min apply cheyandi.
+                </div>
+              </div>
+
+              <!-- Action Bar -->
+              <div class="pt-5 mt-4 border-t border-brand-surfaceDark flex items-center gap-2">
+                <button 
+                  onclick="openBookingModal('Charcoal Face Pack - 100g', '₹119.00')" 
+                  class="flex-1 py-2.5 rounded-full bg-brand-forest hover:bg-brand-forestLight text-white text-xs font-bold tracking-wide transition-all shadow-button active:scale-95 flex items-center justify-center gap-1.5">
+                  <i class="fa-solid fa-basket-shopping text-xs"></i>
+                  <span>Book Now</span>
+                </button>
+                <a 
+                  href="https://wa.me/917702410245?text=Hi,%20I%20want%20to%20order%20Charcoal%20Face%20Pack%20(100g)%20at%20Rs.119" 
+                  target="_blank"
+                  class="p-2.5 rounded-full bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs transition" title="Order via WhatsApp">
+                  <i class="fa-brands fa-whatsapp text-base"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: Herbal Henna Double Filter -->
+          <div class="card-3d-wrap group">
+            <div class="card-3d bg-brand-card rounded-3xl p-6 border-2 border-amber-500/50 shadow-card-hover flex flex-col justify-between h-full relative overflow-hidden transition-all duration-300">
+              
+              <div class="flex items-center justify-between z-10">
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-300 flex items-center gap-1.5 shadow-xs">
+                  <i class="fa-solid fa-certificate text-amber-600"></i> Double Filtered
+                </span>
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-red-100 text-red-700">
+                  Save ₹60 (30% OFF)
+                </span>
+              </div>
+
+              <!-- Stand-up Pouch Visual: Herbal Henna Double Filter -->
+              <div class="my-5 relative flex justify-center items-center py-1">
+                <div class="pouch-3d-layer w-full max-w-[280px] h-[340px] rounded-2xl overflow-hidden shadow-2xl relative border-2 border-emerald-500/50 group-hover:scale-105 transition-transform duration-300 bg-gradient-to-b from-[#1C4D2E] via-[#143B23] to-[#0D2617] p-2 flex flex-col justify-between">
+                  
+                  <div class="w-full h-3 border-b border-emerald-400/40 flex items-center justify-between px-2">
+                    <div class="w-2 h-1 bg-black/40 rounded-full"></div>
+                    <div class="h-[2px] w-3/4 border-t border-dashed border-emerald-200/60"></div>
+                    <div class="w-2 h-1 bg-black/40 rounded-full"></div>
+                  </div>
+
+                  <div class="bg-[#FAF7EE] rounded-xl p-3 shadow-md border-2 border-amber-500/50 flex flex-col items-center text-center my-auto space-y-1">
+                    <div class="w-9 h-9 rounded-full border-2 border-amber-600/50 bg-white flex items-center justify-center shadow-xs">
+                      <span class="text-base">🪔</span>
+                    </div>
+                    <div class="text-[8px] tracking-widest font-black text-[#183B28] uppercase">SREE NATURE POWDERS</div>
+                    <div class="text-[6.5px] italic text-amber-800 font-semibold -mt-1">Natural Care for Every Family</div>
+
+                    <div class="w-3/4 border-t border-amber-400/50 my-1"></div>
+
+                    <div class="font-serif font-black text-sm text-[#143320] leading-tight tracking-wide">
+                      HERBAL HENNA
+                    </div>
+                    <div class="px-2 py-0.5 rounded-full bg-[#183B28] text-amber-300 text-[7px] font-black tracking-tight">
+                      (DOUBLE FILTER)
+                    </div>
+                    <div class="text-[6.5px] font-bold text-[#183B28] pt-0.5">
+                      NATURAL HAIR CARE & COLOUR
+                    </div>
+
+                    <div class="text-[6px] text-gray-700 leading-tight">
+                      Amla • Shikakai • Reetha • Bhringraj • Brahmi • Neem • Aloe
+                    </div>
+                  </div>
+
+                  <div class="bg-black/70 backdrop-blur-xs text-white rounded-xl p-2 flex items-center justify-between text-[8px] font-bold border border-white/20">
+                    <span class="text-emerald-300">Zero Ammonia</span>
+                    <span class="text-amber-300">Net Wt: 100g</span>
+                  </div>
+
+                  <div class="absolute inset-0 shine-overlay pointer-events-none rounded-2xl"></div>
+                </div>
+              </div>
+
+              <!-- Product Details -->
+              <div class="space-y-3 z-10">
+                <div class="flex items-start justify-between">
+                  <div>
+                    <h3 class="font-serif text-xl font-bold text-brand-forest">Herbal Henna (Double Filter)</h3>
+                    <p class="text-xs text-amber-700 font-semibold">Natural Hair Colour & Conditioning</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-xs text-gray-400 line-through">₹200.00</span>
+                    <p class="text-xl font-black text-brand-forest">₹140.00</p>
+                  </div>
+                </div>
+
+                <div class="text-xs text-brand-charcoalSoft leading-relaxed">
+                  Double-filter process valana powder smooth ga untundi. Amla, Shikakai, Reetha, Bhringraj, Brahmi, Neem & Aloe Vera scalp nourish chesi natural reddish-brown tone istundi.
+                </div>
+
+                <div class="flex flex-wrap gap-1.5 text-[10px] font-semibold text-emerald-900">
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Anti-Dandruff</span>
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Zero Ammonia</span>
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Deep Conditioner</span>
+                </div>
+              </div>
+
+              <!-- Action Bar -->
+              <div class="pt-5 mt-4 border-t border-brand-surfaceDark flex items-center gap-2">
+                <button 
+                  onclick="openBookingModal('Herbal Henna Double Filter - 100g', '₹140.00')" 
+                  class="flex-1 py-2.5 rounded-full bg-brand-forest hover:bg-brand-forestLight text-white text-xs font-bold tracking-wide transition-all shadow-button active:scale-95 flex items-center justify-center gap-1.5">
+                  <i class="fa-solid fa-basket-shopping text-xs"></i>
+                  <span>Book Now</span>
+                </button>
+                <a 
+                  href="https://wa.me/917702410245?text=Hi,%20I%20want%20to%20order%20Herbal%20Henna%20Double%20Filter%20(100g)%20at%20Rs.140" 
+                  target="_blank"
+                  class="p-2.5 rounded-full bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs transition" title="Order via WhatsApp">
+                  <i class="fa-brands fa-whatsapp text-base"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: Beetroot Powder -->
+          <div class="card-3d-wrap group">
+            <div class="card-3d bg-brand-card rounded-3xl p-6 border-2 border-rose-300/60 shadow-card-hover flex flex-col justify-between h-full relative overflow-hidden transition-all duration-300">
+              
+              <div class="flex items-center justify-between z-10">
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-rose-100 text-rose-900 border border-rose-300 flex items-center gap-1.5 shadow-xs">
+                  <i class="fa-solid fa-heart text-rose-600"></i> Edible &amp; Topical
+                </span>
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-red-100 text-red-700">
+                  Save ₹45 (35% OFF)
+                </span>
+              </div>
+
+              <!-- Stand-up Pouch Visual: Beetroot Powder -->
+              <div class="my-5 relative flex justify-center items-center py-1">
+                <div class="pouch-3d-layer w-full max-w-[280px] h-[340px] rounded-2xl overflow-hidden shadow-2xl relative border-2 border-rose-500/50 group-hover:scale-105 transition-transform duration-300 bg-gradient-to-b from-[#B81D3C] via-[#91122C] to-[#5C081A] p-2 flex flex-col justify-between">
+                  
+                  <div class="w-full h-3 border-b border-rose-300/40 flex items-center justify-between px-2">
+                    <div class="w-2 h-1 bg-black/40 rounded-full"></div>
+                    <div class="h-[2px] w-3/4 border-t border-dashed border-rose-200/60"></div>
+                    <div class="w-2 h-1 bg-black/40 rounded-full"></div>
+                  </div>
+
+                  <div class="bg-[#FAF7EE] rounded-xl p-3 shadow-md border-2 border-amber-600/40 flex flex-col items-center text-center my-auto space-y-1">
+                    <div class="w-9 h-9 rounded-full border-2 border-amber-700/40 bg-white flex items-center justify-center shadow-xs">
+                      <span class="text-base">❤️</span>
+                    </div>
+                    <div class="text-[8px] tracking-widest font-black text-[#183B28] uppercase">SREE NATURE POWDERS</div>
+                    <div class="text-[6.5px] italic text-amber-800 font-semibold -mt-1">Natural Care for Every Family</div>
+
+                    <div class="w-3/4 border-t border-amber-400/50 my-1"></div>
+
+                    <div class="px-3 py-1 bg-amber-100 rounded-full border border-amber-300">
+                      <span class="font-serif font-black text-xs text-[#5C081A]">Beetroot Powder</span>
+                    </div>
+
+                    <div class="w-16 h-8 bg-gradient-to-t from-[#6E0B20] to-[#A31634] rounded-t-full shadow-inner mx-auto my-1 border-b-2 border-amber-900/40"></div>
+
+                    <div class="text-[7.5px] font-bold text-gray-800">Net Weight: 100g</div>
+                    <div class="px-2 py-0.5 bg-[#183B28] text-amber-300 rounded font-black text-[7.5px]">
+                      7702410245
+                    </div>
+                  </div>
+
+                  <div class="bg-black/70 backdrop-blur-xs text-white rounded-xl p-2 flex items-center justify-between text-[8px] font-bold border border-white/20">
+                    <span class="text-rose-300">100% Pure & Food Grade</span>
+                    <span class="text-amber-300">100g</span>
+                  </div>
+
+                  <div class="absolute inset-0 shine-overlay pointer-events-none rounded-2xl"></div>
+                </div>
+              </div>
+
+              <!-- Product Details -->
+              <div class="space-y-3 z-10">
+                <div class="flex items-start justify-between">
+                  <div>
+                    <h3 class="font-serif text-xl font-bold text-brand-forest">Pure Beetroot Powder</h3>
+                    <p class="text-xs text-rose-700 font-semibold">100% Natural Organic Antioxidant</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-xs text-gray-400 line-through">₹130.00</span>
+                    <p class="text-xl font-black text-brand-forest">₹85.00</p>
+                  </div>
+                </div>
+
+                <div class="text-xs text-brand-charcoalSoft leading-relaxed">
+                  Natural beetroot powder. Smoothies, juices, and daily recipes lo easy ga use cheyyavachu. Natural pink lip & cheek tint ga and skin brightening face pack ga kuda use cheyyochu.
+                </div>
+
+                <div class="flex flex-wrap gap-1.5 text-[10px] font-semibold text-rose-900">
+                  <span class="px-2 py-0.5 rounded-md bg-rose-50 border border-rose-200">Drink & Juice Safe</span>
+                  <span class="px-2 py-0.5 rounded-md bg-rose-50 border border-rose-200">Glow Ubtan</span>
+                  <span class="px-2 py-0.5 rounded-md bg-rose-50 border border-rose-200">Lip Tint</span>
+                </div>
+              </div>
+
+              <!-- Action Bar -->
+              <div class="pt-5 mt-4 border-t border-brand-surfaceDark flex items-center gap-2">
+                <button 
+                  onclick="openBookingModal('Beetroot Powder - 100g', '₹85.00')" 
+                  class="flex-1 py-2.5 rounded-full bg-brand-forest hover:bg-brand-forestLight text-white text-xs font-bold tracking-wide transition-all shadow-button active:scale-95 flex items-center justify-center gap-1.5">
+                  <i class="fa-solid fa-basket-shopping text-xs"></i>
+                  <span>Book Now</span>
+                </button>
+                <a 
+                  href="https://wa.me/917702410245?text=Hi,%20I%20want%20to%20order%20Beetroot%20Powder%20(100g)%20at%20Rs.85" 
+                  target="_blank"
+                  class="p-2.5 rounded-full bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs transition" title="Order via WhatsApp">
+                  <i class="fa-brands fa-whatsapp text-base"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5: Amla Powder -->
+          <div class="card-3d-wrap group">
+            <div class="card-3d bg-brand-card rounded-3xl p-6 border-2 border-slate-300 shadow-card-hover flex flex-col justify-between h-full relative overflow-hidden transition-all duration-300">
+              
+              <div class="flex items-center justify-between z-10">
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-slate-100 text-slate-900 border border-slate-300 flex items-center gap-1.5 shadow-xs">
+                  <i class="fa-solid fa-shield-virus text-emerald-600"></i> Pure Vitamin C
+                </span>
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-red-100 text-red-700">
+                  Save ₹80 (40% OFF)
+                </span>
+              </div>
+
+              <!-- Stand-up Pouch Visual: Amla Powder -->
+              <div class="my-5 relative flex justify-center items-center py-1">
+                <div class="pouch-3d-layer w-full max-w-[280px] h-[340px] rounded-2xl overflow-hidden shadow-2xl relative border-2 border-slate-300 group-hover:scale-105 transition-transform duration-300 bg-gradient-to-b from-[#E2E8F0] via-[#CBD5E1] to-[#94A3B8] p-2 flex flex-col justify-between">
+                  
+                  <div class="w-full h-3 border-b border-slate-400/50 flex items-center justify-between px-2">
+                    <div class="w-2 h-1 bg-slate-600 rounded-full"></div>
+                    <div class="h-[2px] w-3/4 border-t border-dashed border-white"></div>
+                    <div class="w-2 h-1 bg-slate-600 rounded-full"></div>
+                  </div>
+
+                  <div class="bg-[#FAF7EE] rounded-xl p-3 shadow-md border-2 border-amber-600/40 flex flex-col items-center text-center my-auto space-y-1">
+                    <div class="w-9 h-9 rounded-full border-2 border-emerald-800/40 bg-white flex items-center justify-center shadow-xs">
+                      <span class="text-base">🍃</span>
+                    </div>
+                    <div class="text-[8px] tracking-widest font-black text-[#183B28] uppercase">SREE NATURE POWDERS</div>
+                    <div class="text-[6.5px] italic text-amber-800 font-semibold -mt-1">Natural Care for Every Family</div>
+
+                    <div class="w-3/4 border-t border-amber-400/50 my-1"></div>
+
+                    <div class="px-3 py-1 bg-amber-100 rounded-full border border-amber-300">
+                      <span class="font-serif font-black text-xs text-[#183B28]">Amla Powder</span>
+                    </div>
+
+                    <div class="w-16 h-8 bg-gradient-to-t from-[#6A7822] to-[#9BA83C] rounded-t-full shadow-inner mx-auto my-1 border-b-2 border-amber-900/40"></div>
+
+                    <div class="text-[7.5px] font-bold text-gray-800">Net Weight: 100g</div>
+                    <div class="px-2 py-0.5 bg-[#183B28] text-amber-300 rounded font-black text-[7.5px]">
+                      7702410245
+                    </div>
+                  </div>
+
+                  <div class="bg-slate-900/80 backdrop-blur-xs text-white rounded-xl p-2 flex items-center justify-between text-[8px] font-bold border border-white/20">
+                    <span class="text-emerald-300">Daily Immunity Booster</span>
+                    <span class="text-amber-300">100g</span>
+                  </div>
+
+                  <div class="absolute inset-0 shine-overlay pointer-events-none rounded-2xl"></div>
+                </div>
+              </div>
+
+              <!-- Product Details -->
+              <div class="space-y-3 z-10">
+                <div class="flex items-start justify-between">
+                  <div>
+                    <h3 class="font-serif text-xl font-bold text-brand-forest">Pure Amla Powder</h3>
+                    <p class="text-xs text-emerald-700 font-semibold">Vitamin C Rich Natural Powder</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-xs text-gray-400 line-through">₹200.00</span>
+                    <p class="text-xl font-black text-brand-forest">₹120.00</p>
+                  </div>
+                </div>
+
+                <div class="text-xs text-brand-charcoalSoft leading-relaxed">
+                  Daily wellness, hair care, and skin care kosam use cheyyavachu. Morning drink, hair pack, face pack laga easy ga use cheyyandi. No added chemicals or preservatives.
+                </div>
+
+                <div class="flex flex-wrap gap-1.5 text-[10px] font-semibold text-emerald-900">
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Hair Thickness</span>
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Immunity Tonic</span>
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100">Ayurvedic Churna</span>
+                </div>
+              </div>
+
+              <!-- Action Bar -->
+              <div class="pt-5 mt-4 border-t border-brand-surfaceDark flex items-center gap-2">
+                <button 
+                  onclick="openBookingModal('Pure Amla Powder - 100g', '₹120.00')" 
+                  class="flex-1 py-2.5 rounded-full bg-brand-forest hover:bg-brand-forestLight text-white text-xs font-bold tracking-wide transition-all shadow-button active:scale-95 flex items-center justify-center gap-1.5">
+                  <i class="fa-solid fa-basket-shopping text-xs"></i>
+                  <span>Book Now</span>
+                </button>
+                <a 
+                  href="https://wa.me/917702410245?text=Hi,%20I%20want%20to%20order%20Amla%20Powder%20(100g)%20at%20Rs.120" 
+                  target="_blank"
+                  class="p-2.5 rounded-full bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs transition" title="Order via WhatsApp">
+                  <i class="fa-brands fa-whatsapp text-base"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: All-In-One Value Combo -->
+          <div class="card-3d-wrap group">
+            <div class="card-3d bg-gradient-to-br from-brand-forest to-emerald-950 rounded-3xl p-6 text-white shadow-2xl flex flex-col justify-between h-full relative overflow-hidden transition-all duration-300 border-2 border-brand-gold/40">
+              
+              <div class="flex items-center justify-between z-10">
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-400 text-brand-forest font-black flex items-center gap-1">
+                  <i class="fa-solid fa-gift"></i> Best Value Combo
+                </span>
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-800 text-brand-goldLight">
+                  Save ₹216
+                </span>
+              </div>
+
+              <div class="my-6 text-center space-y-3 z-10">
+                <div class="w-16 h-16 mx-auto rounded-2xl bg-brand-gold/20 border border-brand-gold/40 flex items-center justify-center text-3xl text-brand-goldLight shadow-inner">
+                  🎁
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-white">Complete 5-Pack Box</h3>
+                <p class="text-xs text-emerald-200/90 max-w-xs mx-auto leading-relaxed">
+                  Get all 5 authentic pouches (Shampoo Hair Pack, Charcoal Pack, Henna, Beetroot & Amla) with complimentary delivery across India.
+                </p>
+                <div class="pt-2">
+                  <span class="text-xs text-emerald-300 line-through">MRP: ₹810.00</span>
+                  <div class="text-3xl font-extrabold text-amber-400">₹594.00</div>
+                  <span class="text-[11px] text-emerald-200">(Includes all 5 × Authentic Pouches)</span>
+                </div>
+              </div>
+
+              <div class="pt-5 border-t border-emerald-800 flex items-center gap-2 z-10">
+                <button 
+                  onclick="openBookingModal('Complete 5-Pack Herbal Combo', '₹594.00')" 
+                  class="flex-1 py-3 rounded-full bg-gradient-to-r from-brand-gold to-amber-500 hover:from-amber-500 hover:to-brand-gold text-stone-900 font-extrabold text-xs tracking-wider transition-all shadow-button active:scale-95 flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-bolt text-xs"></i>
+                  <span>Book Complete Kit</span>
+                </button>
+                <a 
+                  href="https://wa.me/917702410245?text=Hi,%20I%20want%20to%20order%20the%20Complete%205-Pack%20Herbal%20Combo%20at%20Rs.594" 
+                  target="_blank"
+                  class="p-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs transition" title="WhatsApp Order">
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Direct Helpline Banner -->
+        <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-brand-card via-brand-surface to-brand-card border border-brand-surfaceDark flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 text-xl shadow-xs">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div>
+              <h4 class="font-serif font-bold text-lg text-brand-forest">Direct Order Helpline: +91 7702410245</h4>
+              <p class="text-xs sm:text-sm text-brand-charcoalSoft">Order through Call or WhatsApp for same-day dispatch and customized weight requests.</p>
+            </div>
+          </div>
+          <a 
+            href="https://wa.me/917702410245" 
+            target="_blank"
+            class="whitespace-nowrap px-7 py-3 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs tracking-wide transition-all duration-200 shadow-button flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="process" class="py-20 bg-brand-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-bold uppercase tracking-wider mb-4">
+              Handmade Tradition
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-forest leading-tight mb-6">
+              Why homemade shade-cured powders make a real difference.
+            </h2>
+            <p class="text-brand-charcoalSoft text-sm sm:text-base leading-relaxed mb-6">
+              Commercial powders often undergo high-heat mechanical processing that burns volatile essential phytochemicals and strips nourishing nutrients. At Sree Nature, we stick to slow heritage practices.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex gap-4 p-4 rounded-2xl bg-brand-card border border-brand-surfaceDark shadow-xs">
+                <span class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center shrink-0 text-sm">1</span>
+                <div>
+                  <h4 class="text-sm font-bold text-brand-forest">Forest & Village Harvest</h4>
+                  <p class="text-xs text-brand-charcoalSoft mt-0.5">Clean roots, wild leaves, and pesticide-free petals picked at sunrise.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 p-4 rounded-2xl bg-brand-card border border-brand-surfaceDark shadow-xs">
+                <span class="w-9 h-9 rounded-xl bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0 text-sm">2</span>
+                <div>
+                  <h4 class="text-sm font-bold text-brand-forest">Low-Temperature Shade Drying</h4>
+                  <p class="text-xs text-brand-charcoalSoft mt-0.5">Preserves fragile flavonoids, aromatic oils, natural scent, and organic pigment.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 p-4 rounded-2xl bg-brand-card border border-brand-surfaceDark shadow-xs">
+                <span class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center shrink-0 text-sm">3</span>
+                <div>
+                  <h4 class="text-sm font-bold text-brand-forest">Micro Sieve Pulverization</h4>
+                  <p class="text-xs text-brand-charcoalSoft mt-0.5">Ground into velvety silk powder that glides onto hair and skin without harsh abrasives.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Clean Guarantee Card -->
+          <div class="bg-brand-surface rounded-3xl p-8 border border-brand-surfaceDark relative shadow-soft">
+            <h3 class="font-serif text-2xl font-bold text-brand-forest mb-5">Our Clean Guarantee</h3>
+            
+            <div class="space-y-4 text-sm">
+              <div class="p-4 rounded-2xl bg-white border border-brand-surfaceDark flex items-center justify-between shadow-xs">
+                <span class="text-brand-forest font-semibold">Artificial Coloring</span>
+                <span class="text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full font-bold text-xs flex items-center gap-1.5 border border-emerald-200">
+                  <i class="fa-solid fa-circle-check text-emerald-600"></i> 0% Added
+                </span>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-brand-surfaceDark flex items-center justify-between shadow-xs">
+                <span class="text-brand-forest font-semibold">Synthetic Fragrance</span>
+                <span class="text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full font-bold text-xs flex items-center gap-1.5 border border-emerald-200">
+                  <i class="fa-solid fa-circle-check text-emerald-600"></i> 0% Added
+                </span>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-brand-surfaceDark flex items-center justify-between shadow-xs">
+                <span class="text-brand-forest font-semibold">Talc / Chalk Fillers</span>
+                <span class="text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full font-bold text-xs flex items-center gap-1.5 border border-emerald-200">
+                  <i class="fa-solid fa-circle-check text-emerald-600"></i> 0% Added
+                </span>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-brand-surfaceDark flex items-center justify-between shadow-xs">
+                <span class="text-brand-forest font-semibold">Shelf Life Guarantee</span>
+                <span class="text-amber-800 bg-amber-50 px-3 py-1 rounded-full font-bold text-xs border border-amber-200">
+                  9 Months (Air Sealed)
+                </span>
+              </div>
+            </div>
+
+            <div class="mt-6 text-center">
+              <button 
+                onclick="openBookingModal('General Inquiry')" 
+                class="inline-flex items-center gap-2 text-xs font-bold text-brand-forest hover:text-brand-gold transition-colors">
+                <span>Have specific questions regarding our batching process?</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-brand-surface/60 border-t border-brand-surfaceDark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-4xl mx-auto bg-brand-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-brand-surfaceDark shadow-card-hover">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+            
+            <!-- Contact Info Sidebar -->
+            <div class="md:col-span-2 space-y-6">
+              <div>
+                <span class="text-xs uppercase font-extrabold text-brand-gold tracking-wider">Reach Out</span>
+                <h3 class="font-serif text-2xl font-bold text-brand-forest mt-1">Get in Touch</h3>
+                <p class="text-xs sm:text-sm text-brand-charcoalSoft mt-2 leading-relaxed">
+                  Need personalized advice or want bulk homemade powders for gifting and events? Let's talk.
+                </p>
+              </div>
+
+              <div class="space-y-4 text-xs sm:text-sm text-brand-charcoalSoft">
+                <div class="flex items-start gap-3.5">
+                  <div class="w-9 h-9 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                    <i class="fa-solid fa-location-dot text-sm"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-brand-forest">Sree Nature Powders</p>
+                    <p class="text-brand-charcoalSoft text-xs">Visakhapatnam, Andhra Pradesh</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-9 h-9 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                    <i class="fa-solid fa-phone text-sm"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-brand-forest">Direct Phone & WhatsApp</p>
+                    <p class="text-brand-charcoalSoft text-xs font-semibold">+91 7702410245</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-9 h-9 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                    <i class="fa-solid fa-envelope text-sm"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-brand-forest">Email Support</p>
+                    <p class="text-brand-charcoalSoft text-xs">care@sreenaturepowders.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-gradient-to-r from-emerald-50 to-brand-surface border border-emerald-200 text-xs text-brand-forest">
+                <p class="font-bold flex items-center gap-1.5">
+                  <span class="text-base">📦</span> Fresh Dispatch Schedule
+                </p>
+                <p class="text-[11px] text-brand-charcoalSoft mt-1">Orders booked Monday to Friday ship within 24 hours.</p>
+              </div>
+            </div>
+
+            <!-- WhatsApp Integrated Form -->
+            <div class="md:col-span-3">
+              <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-brand-forest mb-1.5" for="name">Your Name *</label>
+                    <input 
+                      type="text" 
+                      id="name" 
+                      required 
+                      placeholder="e.g. Ananya Reddy" 
+                      class="w-full px-4 py-3 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight focus:ring-2 focus:ring-emerald-200 text-xs sm:text-sm text-brand-charcoal outline-none transition shadow-xs">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-brand-forest mb-1.5" for="phone">Phone / WhatsApp *</label>
+                    <input 
+                      type="tel" 
+                      id="phone" 
+                      required 
+                      placeholder="+91 98765 43210" 
+                      class="w-full px-4 py-3 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight focus:ring-2 focus:ring-emerald-200 text-xs sm:text-sm text-brand-charcoal outline-none transition shadow-xs">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-forest mb-1.5" for="category">Category of Interest</label>
+                  <select 
+                    id="category" 
+                    class="w-full px-4 py-3 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight focus:ring-2 focus:ring-emerald-200 text-xs sm:text-sm text-brand-charcoal outline-none transition shadow-xs">
+                    <option value="Beauty">Beauty & Glowing Skin Care</option>
+                    <option value="Hair">Hair & Scalp Vitality Care</option>
+                    <option value="Immunity">Immunity & Herbal Wellness</option>
+                    <option value="Custom">Custom Assorted Gift Box</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-brand-forest mb-1.5" for="message">Message or Special Requirements</label>
+                  <textarea 
+                    id="message" 
+                    rows="3" 
+                    placeholder="Tell us about your requirements, skin/hair conditions, or bulk inquiry..." 
+                    class="w-full px-4 py-3 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight focus:ring-2 focus:ring-emerald-200 text-xs sm:text-sm text-brand-charcoal outline-none transition shadow-xs"></textarea>
+                </div>
+
+                <div class="pt-2">
+                  <button 
+                    type="submit" 
+                    class="w-full py-4 rounded-full bg-gradient-to-r from-brand-forest to-brand-forestLight hover:from-brand-forestLight hover:to-brand-forest text-white font-bold text-sm transition-all duration-300 shadow-button hover:shadow-xl active:scale-95 flex items-center justify-center gap-2.5">
+                    <i class="fa-regular fa-paper-plane text-xs text-brand-goldLight"></i>
+                    <span>Send Inquiry</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-brand-forest/60 backdrop-blur-sm transition-opacity duration-300">
+    <div class="relative w-full max-w-lg bg-brand-card rounded-3xl p-6 sm:p-8 shadow-2xl border border-brand-surfaceDark max-h-[92vh] overflow-y-auto">
+      
+      <button 
+        onclick="closeBookingModal()" 
+        class="absolute top-5 right-5 w-8 h-8 rounded-full bg-brand-surface text-brand-forest hover:bg-brand-surfaceDark flex items-center justify-center text-sm transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-left space-y-2 mb-6">
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-gold uppercase tracking-wider">
+          <i class="fa-solid fa-leaf"></i> Small Batch Order
+        </div>
+        <h3 class="font-serif text-2xl font-bold text-brand-forest">Book Fresh Herbal Powders</h3>
+        <p class="text-xs text-brand-charcoalSoft">
+          Reserve pure, freshly packed herbal jars right from our upcoming grinding cycle.
+        </p>
+      </div>
+
+      <form id="orderModalForm" onsubmit="handleBookingSubmit(event)" class="space-y-4 text-left">
+        <div>
+          <label class="block text-xs font-bold text-brand-forest mb-1">Selected Product & Price</label>
+          <input 
+            type="text" 
+            id="modalSelectedPowder" 
+            readonly 
+            class="w-full px-4 py-2.5 rounded-2xl bg-emerald-50 font-bold text-brand-forest text-xs sm:text-sm border border-emerald-200 cursor-not-allowed">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-brand-forest mb-1" for="modalName">Full Name *</label>
+            <input 
+              type="text" 
+              id="modalName" 
+              required 
+              placeholder="Your name" 
+              class="w-full px-4 py-2.5 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight focus:ring-1 focus:ring-emerald-300 text-xs sm:text-sm outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-forest mb-1" for="modalPhone">WhatsApp / Mobile *</label>
+            <input 
+              type="tel" 
+              id="modalPhone" 
+              required 
+              placeholder="+91..." 
+              class="w-full px-4 py-2.5 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight focus:ring-1 focus:ring-emerald-300 text-xs sm:text-sm outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-brand-forest mb-1">Pack Size Quantity</label>
+            <select 
+              id="modalQuantity" 
+              class="w-full px-4 py-2.5 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight text-xs sm:text-sm outline-none">
+              <option value="Single 200g Jar">Standard Jar (200g)</option>
+              <option value="Trio Pack (3 x 150g)">Trio Sampler (3 x 150g)</option>
+              <option value="Family Pack 500g">Family Economy (500g)</option>
+              <option value="Bulk 1kg Order">Bulk Farm Pack (1 kg)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brand-forest mb-1">Delivery City/Pincode</label>
+            <input 
+              type="text" 
+              id="modalLocation" 
+              placeholder="e.g. Visakhapatnam - 530002" 
+              required
+              class="w-full px-4 py-2.5 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight text-xs sm:text-sm outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-brand-forest mb-1">Special Preferences / Delivery Notes</label>
+          <input 
+            type="text" 
+            id="modalNotes" 
+            placeholder="e.g. Prefer coarse scrub grain, extra dry ginger, etc." 
+            class="w-full px-4 py-2.5 rounded-2xl bg-brand-bg border border-brand-surfaceDark focus:border-brand-forestLight text-xs sm:text-sm outline-none">
+        </div>
+
+        <div class="pt-3">
+          <button 
+            type="submit" 
+            class="w-full py-4 rounded-full bg-gradient-to-r from-brand-forest to-brand-forestLight hover:from-brand-forestLight hover:to-brand-forest text-white font-bold text-sm transition-all duration-300 shadow-button hover:shadow-xl active:scale-95 flex items-center justify-center gap-2">
+            <span>Confirm & Reserve Booking</span>
+            <i class="fa-solid fa-check text-xs text-brand-goldLight"></i>
+          </button>
+          <p class="text-center text-[11px] text-brand-charcoalSoft mt-2 font-medium">No advance payment required. Pay upon shipment dispatch.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 hidden max-w-sm">
+    <div class="p-4 rounded-2xl bg-brand-forest text-white shadow-2xl border border-emerald-400/40 flex items-start gap-3 toast-enter">
+      <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 text-sm shadow-sm">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div>
+        <p id="toastTitle" class="text-xs font-bold text-brand-goldLight">Booking Received!</p>
+        <p id="toastMessage" class="text-xs text-white/90 mt-0.5 leading-snug">We will reach out on WhatsApp to confirm your batch allocation.</p>
+      </div>
+      <button onclick="dismissToast()" class="text-white/70 hover:text-white text-xs ml-2">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+
+  <footer class="bg-brand-bg border-t border-brand-surfaceDark py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-brand-charcoalSoft font-medium">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full overflow-hidden border border-brand-gold/60 shadow-xs bg-[#FAF7EE] flex items-center justify-center shrink-0 p-0.5">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="96" fill="#FAF7EE" stroke="#183B28" stroke-width="4"/>
+            <circle cx="100" cy="100" r="91" fill="none" stroke="#D97706" stroke-width="2"/>
+            <path d="M-20,-4 C-20,14 20,14 20,-4 Z" transform="translate(100, 60)" fill="#183B28"/>
+            <text x="100" y="105" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="900" fill="#183B28" text-anchor="middle">SREE NATURE</text>
+            <text x="100" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#B45309" text-anchor="middle" letter-spacing="2">POWDERS</text>
+            <text x="100" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="900" fill="#183B28" text-anchor="middle">7702410245</text>
+          </svg>
+        </div>
+        <span class="font-serif font-bold text-brand-forest text-sm">Sree Nature Powders</span>
+        <span>• Pure & Handcrafted • Visakhapatnam</span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#about" class="hover:text-brand-forest transition-colors">Our Mission</a>
+        <a href="#collections" class="hover:text-brand-forest transition-colors">Products</a>
+        <a href="#contact" class="hover:text-brand-forest transition-colors">Support</a>
+      </div>
+
+      <p class="text-center sm:text-right text-brand-charcoalSoft">
+        &copy; <span id="currentYear"></span> Sree Nature Powders. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // 3D Tilt calculation on mouse move over cards
+    document.querySelectorAll('.card-3d-wrap').forEach(wrap => {
+      const card = wrap.querySelector('.card-3d');
+      if (!card) return;
+
+      wrap.addEventListener('mousemove', (e) => {
+        const rect = wrap.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * -12;
+        const rotateY = ((x - centerX) / centerX) * 12;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+
+      wrap.addEventListener('mouseleave', () => {
+        card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+      });
+    });
+
+    // Mobile Hamburger Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isClosed = mobileMenu.classList.contains('hidden');
+        if (isClosed) {
+          mobileMenu.classList.remove('hidden');
+          menuIcon.classList.replace('fa-bars', 'fa-xmark');
+        } else {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.replace('fa-xmark', 'fa-bars');
+        }
+      });
+    }
+
+    // Close mobile menu when clicking internal anchor links
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.replace('fa-xmark', 'fa-bars');
+      });
+    });
+
+    // Booking Modal Handling with Price Support
+    const bookingModal = document.getElementById('bookingModal');
+    const modalPowderInput = document.getElementById('modalSelectedPowder');
+
+    function openBookingModal(productName = 'General Herbal Assortment', price = '') {
+      if (modalPowderInput) {
+        modalPowderInput.value = price ? `${productName} (${price})` : productName;
+      }
+      bookingModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBookingModal() {
+      bookingModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal on escape key or clicking backdrop
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !bookingModal.classList.contains('hidden')) {
+        closeBookingModal();
+      }
+    });
+
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) {
+        closeBookingModal();
+      }
+    });
+
+    // Interactive Toast Notification
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      const toastTitle = document.getElementById('toastTitle');
+      const toastMsg = document.getElementById('toastMessage');
+
+      toastTitle.textContent = title;
+      toastMsg.textContent = message;
+
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        dismissToast();
+      }, 5000);
+    }
+
+    function dismissToast() {
+      const toast = document.getElementById('toastNotification');
+      toast.classList.add('hidden');
+    }
+
+    // Handle Modal Booking Submission
+    function handleBookingSubmit(event) {
+      event.preventDefault();
+      const powder = document.getElementById('modalSelectedPowder').value;
+      const name = document.getElementById('modalName').value.trim();
+      const phone = document.getElementById('modalPhone').value.trim();
+      const qty = document.getElementById('modalQuantity').value;
+      const location = document.getElementById('modalLocation').value.trim();
+      const notes = document.getElementById('modalNotes').value.trim();
+
+      closeBookingModal();
+      document.getElementById('orderModalForm').reset();
+
+      // Format WhatsApp booking text
+      const orderText = `*New Order Booking - Sree Nature Powders*%0A%0A` +
+        `*Product:* ${encodeURIComponent(powder)}%0A` +
+        `*Customer Name:* ${encodeURIComponent(name)}%0A` +
+        `*Contact:* ${encodeURIComponent(phone)}%0A` +
+        `*Quantity:* ${encodeURIComponent(qty)}%0A` +
+        `*Location:* ${encodeURIComponent(location)}%0A` +
+        (notes ? `*Notes:* ${encodeURIComponent(notes)}%0A` : '') +
+        `%0A_Sent via website order reservation_`;
+
+      const whatsappUrl = `https://wa.me/917702410245?text=${orderText}`;
+
+      showToast(
+        `Order Reserved: ${name}!`, 
+        `Redirecting to WhatsApp (+91 7702410245) to confirm your fresh batch allocation.`
+      );
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 800);
+    }
+
+    // Handle Contact Form Submission to WhatsApp
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const category = document.getElementById('category').value;
+      const message = document.getElementById('message').value.trim();
+      
+      const text = `*New Inquiry - Sree Nature Powders*%0A%0A` +
+        `*Name:* ${encodeURIComponent(name)}%0A` +
+        `*Phone:* ${encodeURIComponent(phone)}%0A` +
+        `*Category of Interest:* ${encodeURIComponent(category)}%0A` +
+        (message ? `*Message:* ${encodeURIComponent(message)}%0A%0A` : `%0A`) +
+        `_Sent from website inquiry form (Visakhapatnam)_`;
+
+      const whatsappUrl = `https://wa.me/917702410245?text=${text}`;
+
+      showToast(
+        `Redirecting to WhatsApp...`, 
+        `Opening WhatsApp chat with Sree Nature Powders for ${name}.`
+      );
+
+      window.open(whatsappUrl, '_blank');
+      document.getElementById('contactForm').reset();
+    }
+
+    // Interactive Photo Uploader Function
+    function loadLocalImage(event) {
+      const file = event.target.files && event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = document.getElementById('shampooRealImg');
+          if (img) {
+            img.src = e.target.result;
+            showToast('Photo Updated!', 'Your authentic product photo is now live in the preview.');
+          }
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+</body>
+</html>
